@@ -1,4 +1,4 @@
--- sedlects all column wishers table
+-- selects all column from wishers table
 SELECT * FROM wishers
 -- further filtering using the time frame
 WHERE wishes BETWEEN '2024-10-01' AND '2024-11-01';
