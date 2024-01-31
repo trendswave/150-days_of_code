@@ -46,7 +46,7 @@ def list_of_free_fields(board):
 
 def victory_for(board, sgn):
 	if sgn == "X":  # First player
-		who = 'me'  # The computer
+		who = 'me'  # 
 	elif sgn == "O":  # Second player
 		who = 'you'  # yes - it's our side
 	else:
@@ -64,3 +64,13 @@ def victory_for(board, sgn):
 	if cross1 or cross2:
 		return who
 	return None
+
+
+def draw_move(board):
+	free = make_list_of_free_fields(board)  # make a list of free fields
+	cnt = len(free)
+	if cnt > 0:
+		this = randrange(cnt)
+		row, col = free[this]
+		board[row][col] = 'X'
+
