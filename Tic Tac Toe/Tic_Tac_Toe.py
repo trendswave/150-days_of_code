@@ -67,7 +67,7 @@ def victory_for(board, sgn):
 
 
 def draw_move(board):
-	free = make_list_of_free_fields(board)  # make a list of free fields
+	free = list_of_free_fields(board)  # make a list of free fields
 	cnt = len(free)
 	if cnt > 0:
 		this = randrange(cnt)
@@ -77,12 +77,12 @@ def draw_move(board):
 
 board = [[3 * j + i + 1 for i in range(3)] for j in range(3)]
 board[1][1] = 'X'  # set first 'X' in the middle
-free = make_list_of_free_fields(board)
+free = list_of_free_fields(board)
 human_turn = True  # which turn is it now?
 while len(free):
 	display_board(board)
 	if human_turn:
-		enter_move(board)
+		your_move(board)
 		victor = victory_for(board, 'O')
 	else:
 		draw_move(board)
@@ -90,4 +90,12 @@ while len(free):
 	if victor != None:
 		break
 	human_turn = not human_turn
-	free = make_list_of_free_fields(board)
+	free = list_of_free_fields(board)
+	
+display_board(board)
+if victor == 'you':
+	print("You won!")
+elif victor == 'me':
+	print("I won")
+else:
+	print("Tie!")
