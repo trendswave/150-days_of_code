@@ -1,6 +1,6 @@
 def victory_for(board, sgn):
 	if sgn == "X":  # First player
-		who = 'me'  # The computer
+		who = 'me'  #
 	elif sgn == "O":  # Second player
 		who = 'you'  # yes - it's our side
 	else:
