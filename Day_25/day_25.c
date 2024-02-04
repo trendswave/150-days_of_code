@@ -18,3 +18,4 @@ bool isStrongPassword(char password[])
         return false;
     }
 }
+/**/
