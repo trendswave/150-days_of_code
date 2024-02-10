@@ -9,7 +9,6 @@ class SolarPowerSystem:
 
     def optimize_system(self):
         # optimization and considerations 
-        #Coming soon
 
         # Example optimization calculation
         solar_capacity = self.calculate_solar_capacity()
