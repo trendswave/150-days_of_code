@@ -16,7 +16,7 @@ def load_data():
 
 def save_data(data):
     with open('passwords.json', 'w') as file:
-        json.dump(data, file, indent=4)
+        json.dump(data, file, indent=4) #
 
 # Add a new password to the data dictionary
 
