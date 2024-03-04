@@ -1,0 +1,7 @@
+#Day_54_of_150_days_challange
+Configured server-02 to mirror server-01 using Bash script I developed during my web server project. Automation is key! Also set up HAproxy to distribute traffic between server-0111 and server-02 using a round-robin algorithm. Managed HAproxy via an init script. Servers configured with correct hostnames. #CodingChallenge
+#LoadBalancing
+#daysofcode
+#Automation
+#ALX_SE
+#buildinpublic
